@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>Data Display</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Customer</th>
+    <th>Room</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>FromDate</th>
+    <th>ToDate</th>
+  </tr>
+    {% for r in report %}
+  <tr>
+    <td>{{r.customer}}</td>
+    <td>{{r.room}}</td>
+    <td>{{r.Phone}}</td>
+    <td>{{r.Email}}</td>
+    <td>{{r.FromDate}}</td>
+    <td>{{r.toDate}}</td>
+  </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
+
