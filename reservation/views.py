@@ -2,7 +2,7 @@ from django.views import generic
 from rest_framework.views import APIView
 from django.shortcuts import render, redirect
 from .models import User, Room, Reservation
-from .serializers import ReservationSerializer, RoomSerializer, RezervationPersonSerializer
+from .serializers import ReservationSerializer, RoomSerializer
 from rest_framework import status, generics, viewsets
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
